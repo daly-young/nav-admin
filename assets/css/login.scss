@@ -1,0 +1,74 @@
+.login {
+    &__form {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 300px;
+        background-color: #fff;
+        width: 600px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, .3) 0 2px 5px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    h3 {
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: inline-block;
+        font-size: 18px;
+        margin-right: 20px;
+        width: 100px;
+        text-align: right;
+        border-left: 2px solid #FFE600;
+    }
+
+    input {
+        width: 300px;
+        border: 1px solid #ffe600!important;
+        border-radius: 10px;
+        line-height: 30px;
+        padding: 0 10px;
+        outline: none;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+    &__btns {
+        span:first-child {
+            margin-bottom: 20px;
+        }
+        &-active {
+            display: block;
+            width: 420px;
+            line-height: 30px;
+            background-color: #FFE600;
+            border-radius: 10px;
+            text-align: center;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        &-gray {
+            display: block;
+            line-height: 30px;
+            color: #aaa;
+            border-bottom: 1px solid #aaa;
+            width: 40px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+    }
+    &__mail {
+        position: fixed;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}

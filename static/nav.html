@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	</head>
+	<body>
+		add
+		<form action="/nav/add" method="post">
+			categoryId:<input type="text" name="categoryId" id="categoryId" value="" /><br />
+			title:<input type="text" name="title" id="title" value="" /><br />
+			content:<input type="text" name="content" id="content" value="" /><br />
+			<br /><input type="submit" value="submit"/>
+		</form>
+		<br />
+		<hr />
+		edit
+		<form action="/nav/edit" method="post">
+			navId（变量名用的 _id）:<input type="text" name="_id" id="_id" value="" /><br />
+			title:<input type="text" name="title" id="title" value="" /><br />
+			content:<input type="text" name="content" id="content" value="" /><br />
+			
+			<br /><input type="submit" value="submit"/>
+		</form>
+		<br />
+		<hr /> findAll - get请求  根据分类id查询
+		<form action="/nav/findAll" method="get">
+			categoryId:<input type="text" name="categoryId" id="categoryId" value="" /><br />
+
+			<br /><input type="submit" value="submit" />
+		</form>
+		<br />
+		<hr /> del
+		<form action="/nav/del" method="post">
+			navId:<input type="text" name="navId" id="navId" value="" /><br />
+
+			<br /><input type="submit" value="submit" />
+		</form>
+	</body>
+</html>

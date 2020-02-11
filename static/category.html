@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	</head>
+
+	<body>
+		add
+		<form action="/cate/add" method="post">
+			isPublic: 1=公有 0 私有
+			<input type="text" name="isPublic" id="isPublic" value="" /><br /> name:
+			<input type="text" name="name" id="name" value="" /><br />
+
+			<br /><input type="submit" value="submit" />
+		</form>
+		<br />
+		<hr /> edit
+		<form action="/cate/edit" method="post">
+			categoryId（变量名用的 _id）:<input type="text" name="_id" id="_id" value="" />
+			<br /> name:
+			<input type="text" name="name" id="name" value="" /><br />
+
+			<br /><input type="submit" value="submit" />
+		</form>
+		<br />
+		<hr /> findAll
+		<form action="/cate/findAll" method="get">
+			isPublic:<input type="text" name="isPublic" id="isPublic" value="" /><br />
+
+			<br /><input type="submit" value="submit" />
+		</form>
+		<br />
+		<hr /> del 分类删除 会把此分类下面所有的 导航删除掉
+		<form action="/cate/del" method="post">
+			categoryId:<input type="text" name="categoryId" id="categoryId" value="" /><br />
+
+			<br /><input type="submit" value="submit" />
+		</form>
+	</body>
+
+</html>

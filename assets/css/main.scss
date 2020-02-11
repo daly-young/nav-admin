@@ -1,0 +1,174 @@
+.main {
+    height: 100%;
+    width: 100%;
+    &__nav {
+        float: left;
+        width: 25%;
+        height: 100%;
+        overflow: auto;
+        border-right: 1px solid #ffe600;
+        background-color: #fff;
+        position: relative;
+        &>p {
+            float: left;
+            width: 20%;
+            height: 100%;
+            background-color: #eee;
+            span {
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 20px 30%;
+                border-left: 2px solid #ccc;
+                &.selected {
+                    background-color: #fff;
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                }
+            }
+        }
+        ul {
+            float: left;
+            width: 80%;
+            height: 100%;
+            overflow-y: auto;
+        }
+        li {
+            width: 100%;
+            padding: 10px;
+            p {
+
+                text-align: center;
+                line-height: 40px;
+                border-radius: 5px;
+            }
+            &.selected {
+                p {
+                    background-color: #ffe600;
+                }
+            }
+        }
+        &>div {
+            position: absolute;
+            width: 80%;
+            left: 20%;
+            top: 40%;
+            img {
+                display: block;
+                width: 40%;
+                margin: 0 auto;
+            }
+            p {
+                padding: 0 10px;
+                text-align: center;
+                line-height: 30px;
+            }
+            span {
+                display: block;
+                margin: 0 auto;
+                width: 50%;
+                text-align: center;
+                line-height: 30px;
+                background-color: #ffe600;
+                border-radius: 5px;
+            }
+        }
+    }
+    &__navlist {
+        float: right;
+        width: 74%;
+        height: 100%;
+        overflow: auto;
+        padding: 10px;
+        li {
+            margin-bottom: 10px;
+            border: 1px solid transparent;
+            &:hover {
+                background-color: #ffe600;
+                border-radius: 5px;
+            }
+        }
+        a {
+            display: block;
+            padding: 0 100px 0 60px;
+            position: relative;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+            &:active,
+            &:link,
+            &:visited {
+                color: #000;
+            }
+            p {
+                line-height: 30px;
+                clear: both;
+                overflow: hidden;
+                span:first-child {
+                    float: left;
+                    width: 18%;
+                    font-weight: bold;
+                }
+                span:last-child {
+                    float: left;
+                    width: 80%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                &:hover {
+                    span:last-child {
+                        white-space: normal;
+                        word-break: break-all;
+                    }
+                }
+            }
+        }
+        &-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &>div {
+            padding: 20% 0;
+            img {
+                display: block;
+                width: 20%;
+                margin: 0 auto;
+            }
+            p {
+                padding: 0 10px;
+                text-align: center;
+                line-height: 60px;
+            }
+            span {
+                display: block;
+                margin: 0 auto;
+                width: 50%;
+                text-align: center;
+                line-height: 30px;
+                background-color: #ffe600;
+                border-radius: 5px;
+            }
+        }
+    }
+    &__set {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        text-decoration: none;
+        width: 100px;
+        text-align: center;
+        line-height: 40px;
+        background-color: #eee;
+        border-radius: 5px;
+        color: #999;
+    }
+}
